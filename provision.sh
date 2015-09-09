@@ -14,7 +14,7 @@ apt-get -y upgrade > /dev/null 2>&1
 echo "--- Done. ---"
 echo "--- Starting environment setup: ---"
 
-echo "--- Installing base packages... ---"
+echo "--- Installing base packages ---"
 apt-get -y install curl build-essential git > /dev/null 2>&1
 echo "--- Base packages installation complete. ---"
 
@@ -24,10 +24,10 @@ add-apt-repository ppa:ondrej/php5 > /dev/null 2>&1
 echo "--- Update package list ---"
 apt-get update > /dev/null 2>&1
 
-echo "-- Installing MySQL server and client.. ---"
+echo "--- Installing MySQL server and client ---"
 echo "mysql-server mysql-server/root_password password $DBROOTPASSWD" | debconf-set-selections
 echo "mysql-server mysql-server/root_password_again password $DBROOTPASSWD" | debconf-set-selections
-apt-get -y install mysql-server > 2>&1
+apt-get -y install mysql-server > /dev/null 2>&1
 echo "--- MySQL installation complete. ---"
 
 echo -e "--- Setting up our MySQL user and db ---"
