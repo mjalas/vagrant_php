@@ -1,5 +1,5 @@
 {
-	"requrie":{
+	"require":{
 		"phpunit/phpunit": "4.8.6"
 	}
 }
