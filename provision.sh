@@ -19,7 +19,7 @@ apt-get -y install curl build-essential git > /dev/null 2>&1
 echo "--- Base packages installation complete. ---"
 
 echo "--- Add repos to update distros ---"
-add-apt-repository ppa:ondrej/php5 > /dev/null 2>&1
+add-apt-repository ppa:ondrej/php5-5.6 > /dev/null 2>&1
 
 echo "--- Update package list ---"
 apt-get update > /dev/null 2>&1
