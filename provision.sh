@@ -48,6 +48,8 @@ echo "--- Setting app structure ---"
 mkdir /vagrant/app
 mkdir /vagrant/share
 mkdir /vagrant/app/public
+mkdir /vagrant/app/src
+mkdir /vagrant/app/test
 touch /vagrant/app/public/index.php
 touch /vagrant/app/public/.htaccess
 
