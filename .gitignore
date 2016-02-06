@@ -4,3 +4,7 @@ app/*
 share/*
 vendor/*
 composer.lock
+
+# Sublime Text project files
+*.sublime-project
+*.sublime-workspace
